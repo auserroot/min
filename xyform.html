@@ -1,0 +1,759 @@
+<head runat="server">
+		<title>中国民办教育学生信息网(官网)-民教信息网</title>
+		<meta name="generator" content="">
+		<meta name="Keywords" content="">
+		<meta name="description" content="">
+		<link href="static/css/new-add.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="static/css/css.css">
+		<script src="static/js/html2canvas.js"></script>
+		<script src="static/js/config.js"></script>
+		<script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="static/js/jsencrypt.js"></script>
+		<script type="text/javascript" src="static/js/base64.js"></script>
+		<script src="static/js/config.js"></script>
+		<link type="text/css" rel="stylesheet" href="static/css/rz.css">
+		<link type="text/css" rel="stylesheet" href="static/css/style5.css">
+	
+		<style type="text/css">
+			/* CSS样式制作 */
+			* {
+				padding: 0px;
+				margin: 0px;
+			}
+
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: #336699;
+			}
+
+			#tabcx {
+				width: 880px;
+				padding: 0px;
+				height: auto;
+				margin: 0px;
+				right: 10px;
+				background-position: left;
+				float: left;
+			}
+
+			#tabcx ul {
+				list-style: none;
+				height: 29px;
+				line-height: 27px;
+				border-bottom-width: 0px;
+				border-bottom-style: none;
+				width: 880px;
+			}
+
+			#tabcx ul li {
+				cursor: pointer;
+				float: left;
+				list-style: none;
+				height: 29px;
+				line-height: 28px;
+				width: auto;
+				margin-top: 0px;
+				margin-right: 10px;
+				margin-bottom: 0px;
+				margin-left: 10px;
+				padding-top: 0px;
+				padding-right: 10px;
+				padding-bottom: 0px;
+				padding-left: 10px;
+				color: #FFFFFF;
+				background-color: #0099FF;
+				top: 5px;
+				clip: rect(5px, auto, auto, auto);
+				border-top-width: 2px;
+				border-right-width: 2px;
+				border-bottom-width: 4px;
+				border-left-width: 2px;
+				border-top-style: solid;
+				border-right-style: solid;
+				border-bottom-style: solid;
+				border-left-style: solid;
+				border-top-color: #0099FF;
+				border-right-color: #0099FF;
+				border-bottom-color: #0066FF;
+				border-left-color: #0099FF;
+				font-weight: 400;
+				font-size: 14px;
+			}
+
+			#tabcx ul li.on {
+				border-top-width: 1px;
+				border-bottom-width: 1px;
+				border-top-style: solid;
+				border-bottom-style: solid;
+				top: 0px;
+				border-top-color: #0099FF;
+				border-right-color: #0099FF;
+				border-bottom-color: #0099FF;
+				border-left-color: #0099FF;
+			}
+
+			#tabcx div {
+				height: 350px;
+				width: 850px;
+				line-height: 24px;
+				padding: 10px;
+				padding: 10px;
+				border: 1px solid #0099FF;
+			}
+
+			.hide {
+				display: none;
+			}
+
+			.STYLE2 {
+				color: #FF0000;
+				font-size: 11px;
+			}
+
+			.STYLE3 {
+		font-weight: 500;
+		font-size: 14px;
+		color: #000000;
+		line-height: 27px;
+	    }
+		h9{
+			height: 30px;
+			line-height:20px;
+			color: #0066CC;
+			font-size:16px;
+			text-align: center;
+			font-weight: 600;
+			background-position: center;
+		}
+	  
+	  
+	  .cn_table1{
+		margin:0 auto;
+		background-position: center;
+		border: 1px solid #a1d4e7;
+	}
+	 
+	.ftl{ float: left; }
+		.mid{
+		text-align: center;
+	} 
+		.pt10{ padding-top: 10px; }
+		.curb{font-size: 14px; height: 40px; line-height: 40px; border-bottom: 1px solid #ececec;background: url(static/image/home.png) no-repeat left center; text-indent: 30px;}
+		.cxxt{
+		background:url(http://www.ckhci.com.cn/img/cx_bg.jpg) repeat-x;
+		width: 650px;
+		height:900px;
+		border:1px solid #CCCCCC;
+		border-radius: 5px;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-bottom: 0;
+		margin-left: auto;
+		padding-top: 0;
+		padding-right: 12px;
+		padding-bottom: 0;
+		padding-left: 12px;
+	}
+		.cxxt .title h2{
+		height: 50px;
+		line-height: 50px;
+		color: #0033FF;
+		font-size: 18px;
+		text-align: center;
+		font-weight: 600;
+	}
+	    .table_cx .btn{ width: 100px; height: 38px;line-height: 38px; text-align: center;border-radius: 3px; margin:20px 15px 20px;  }
+	    .yz{vertical-align: middle; width: 78px; height: 28px;display: inline-block;}
+	    .btn_blue{ background: #058ed7;border:1px solid #1673ca;color: #fff;}
+	    .btn_gray{ background: #e1e1e1;border:1px solid #d5d5d5;color: #939393;}
+	    .jy{font-size: 12px;line-height: 26px;color: #393939;}
+	    .about_2{border-bottom: 1px dashed #ccc;padding-bottom: 16px;display: block;}
+		.table_cx table{font-size: 14px;height: 781px; 
+	     border-bottom: 1px dashed #ccc;
+	        }
+		.table_cx tr{ height: 56px; margin-bottom: 10px; }
+		.table_cx input{display: inline-block;height: 34px; line-height: 34px; padding:0 4px;border: 1px solid #ccc;width: 160px;}
+		.table_cx input.w112{ width: 112px;margin-right: 15px; }
+	    .table_cx input.w70{ width: 70px; }
+	  #Dno{
+	    color: #f00;
+	    font-size: 16px;
+	  }
+	    .table_cx .btn{ width: 150px; height: 30px;line-height: 30px; text-align: center;border-radius: 3px; margin:20px 20px 20px;  }
+	        .table
+	        {
+	            height: 692px;
+	        }
+	    
+		.tableTitle {
+		    clear: both;
+		    font-size: 24px;
+		    font-weight: normal;
+		    text-align: center;
+		    line-height: 40px;
+		    padding: 10px 0;
+		    color: #2EAFBB;
+		}	
+		       #tab ul{
+		  list-style:none;
+		  height:29px;
+			line-height:27px;
+			border-bottom-width: 0px;
+			border-bottom-style: none;
+			width: 698px;
+		}
+		#tab ul li{
+			cursor:pointer;
+			float:left;
+		  list-style:none; 
+		  height:29px; 					
+		  line-height:28px;
+			width: auto;
+			margin: 0 3px;
+			padding: 0 3px;
+			font-size: 12px;
+			color: #2EAFBB;
+		  background-color: #FFFFFF;
+		}
+		.strborder{
+		  border: 1px solid #2eafbb;
+		  border-bottom: 0;
+		}
+		#tab ul li.on{
+			border-top-width: 2px;
+			border-bottom-width: 2px;
+			border-top-style: solid;
+			border-bottom-style: solid;
+			border-top-color: #2EAFBB;
+			border-bottom-color: #FFF;
+			top: 0px;
+		}
+		#tab div{
+
+			width:auto;
+			line-height:24px;
+			padding:10px;
+			border-top:1px solid #2EAFBB;
+		}
+		.hide{display:none;}
+		
+		
+		#tab pic{
+			height: auto;
+			width: auto;
+			position: relative;
+			left: 540px;
+			border-top-width: 0px;
+			border-right-width: 0px;
+			border-bottom-width: 0px;
+			border-left-width: 0px;
+			border-top-style: none;
+			border-right-style: none;
+			border-bottom-style: none;
+			border-left-style: none;
+			padding: 0px;
+		}   
+
+		.sdiv2 {
+	  display: block;
+	  height: 20px;
+	  width: 70px;
+	  background-color: red; /* 不支持线性的时候显示 */
+	  background-image: linear-gradient(-90deg, #ead9e1 0%, #dcdef6 50%, #ead9e1 100%);
+	  background:linear-gradient(-90deg, #ead9e1 0%, #dcdef6 50%, #ead9e1 100%);
+	  position: relative;
+	  z-index: 1;
+	  margin-right: 20px;
+	  box-sizing: border-box;
+	  cursor: pointer; 
+	  box-shadow: 0 0 5px #ead9e1;
+	}
+	  .sdiv {
+		position: absolute;
+		height: 20px;
+		width: 70px;
+		left: 0;
+		top: 0;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;	
+		background:linear-gradient(to right, #60536a 0%, #443736  25%, #53525d 50%, #706266 100%);		 
+		-webkit-background-clip: text;
+		color: transparent;
+		z-index: 2;
+		letter-spacing: 2px;
+	}
+	</style>
+	<script language="javascript">
+		function doPrint() { 
+		bdhtml=window.document.body.innerHTML; 
+		sprnstr="<!--startprint-->"; 
+		eprnstr="<!--endprint-->"; 
+		prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17); 
+		prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr)); 
+		window.document.body.innerHTML=prnhtml; 
+		window.print(); 
+		} 
+	</script>
+</head>
+
+<body>	
+<div style="width: 100%;height: 50px;background-color: #21ad49;position: relative;" id="toop">
+			<div style="background-image: url(static/image/trusted-web1_01.png);width: 30px;height: 38px;background-size: 100%;background-repeat: no-repeat;margin-left: 25px;float: left;position: absolute;top: 8px;"></div>
+				<h2 style="color: white;font-size: 16px;line-height: 50px;margin-left: 70px;white-space:nowrap">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.ckhci.com.cn，请放心访问</h2>
+				<a href="index.html"><p style="color: #ffe6ae;position: absolute;right: 350px;top: 10px;font-size: 18px;">了解详情></p></a>
+				<a href="index.html"><img src="static/picture/trusted-real-name.png" style="position: absolute;right: 200px;top: 5px;"></a>
+			</div>
+				<img id="toop2" src="static/picture/la.png" title="收起" style="position: fixed;right: 50px;top: 0px;width: 50px;height: 70px;" onclick="shou()">
+				<img id="toop3" src="static/picture/zhan.png" title="展开" style="position: fixed;right: 50px;top: 0px;width: 50px;height: 70px;display: none;" onclick="zhan()">
+				<div class="toop" style="display: none;">
+				<div class="topleft">
+					欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.ckhci.com.cn			</div>
+			<div class="topright">
+				<!-- <img src="static/picture/h.png"><a href="#">登录</a><img src="static/picture/z.png"><a href="#">注册</a> -->
+			</div>
+</div>
+
+<script>
+	function shou(){
+		$('.toop').css("display","block");
+		$('#toop3').css("display","block");
+		$('#toop').css("display","none");
+		$('#toop2').css("display","none");
+	}
+	function zhan(){
+		$('.toop').css("display","none");
+		$('#toop3').css("display","none");
+		$('#toop').css("display","block");
+		$('#toop2').css("display","block");
+	}
+</script>
+
+
+
+		<!---------------------------------------------------------------------------------------------------------------------网站头部开始-->
+		<div class="beiji-01">
+			<!--<div class="beiji-02"></div>新年背景-->
+			<div style="background-color:#ffffff;width:1004px;margin:0 auto;">
+				<div class="box2">
+					<div id="banner">
+					                              <img src="static/picture/banner2.png">
+                        					</div>
+					<div id="nav">
+					<div id="nav0">
+							<div class="sylj"><a href="index.html">&nbsp;</a></div>
+							<div class="sygk">
+								<ul>
+									<li><a href="16.html">平台介绍</a></li>
+									<li><a href="17.html">资质批文</a></li>
+									<li><a href="18.html">主管单位</a></li>
+									<li><a href="19.html">领导活动</a></li>
+									<li><a href="20.html">政策法规</a></li>
+									<li><a href="21.html">民教人物</a></li>
+								</ul>
+							</div>
+							<div class="syzx">
+								<ul>
+                                    <li><a href="4.html">新闻中心</a></li>
+                                    <li><a href="5.html">通知公告</a></li>
+                                    <li><a href="6.html">院校资讯</a></li>
+                                    <li><a href="7.html">媒体关注</a></li>
+                                    <li><a href="8.html">教育时评</a></li>
+                                    <li><a href="9.html">要闻博览</a></li>
+										
+								</ul>
+							</div>
+							<div class="syfw">
+								<ul>
+                                <li><a href="">证书查询</a></li>
+									<li><a href="xjform.html">学籍查询</a></li>
+									<li><a href="daform.html">档案管理</a></li>
+									<li><a href="bgform.html">认证报告</a></li>
+									<li><a href="zsform.html">证书验证</a></li>
+									<li><a href="xjyzform.html">学籍验证</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div id="announ">
+						<div class="announ_l">
+							<em><img src="static/picture/announce.gif" width="18" height="18"></em>
+							<b></b>
+							<div id="scrollDiv">
+								<script language="javascript">
+									$(function(){
+										//单行应用@Mr.Think
+										var _wrap=$('ul.line');//定义滚动区域
+										var _interval=2000;//定义滚动间隙时间
+										var _moving;//需要清除的动画
+										_wrap.hover(function(){
+										clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+										},function(){
+										_moving=setInterval(function(){
+										var _field=_wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+										var _h=_field.height();//取得每次滚动高度
+										_field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值，隐藏第一行
+										_field.css('marginTop',0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+										})
+										},_interval)//滚动间隔时间取决于_interval
+										}).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+										});
+										$(function(){
+										//多行应用@Mr.Think
+										var _wrap=$('ul.mulitline');//定义滚动区域
+										var _interval=3000;//定义滚动间隙时间
+										var _moving;//需要清除的动画
+										_wrap.hover(function(){
+										clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+										},function(){
+										_moving=setInterval(function(){
+										var _field=_wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+										var _h=_field.height();//取得每次滚动高度
+										_field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值，隐藏第一行
+											_field.css('marginTop',0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+										})
+										},_interval)//滚动间隔时间取决于_interval
+										}).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+										});
+										</script>
+								<ul class="line">
+
+							
+									<li><a href="#" target="_blank">关于非法网站仿冒我司民教网严正声明</a></li>
+							
+									<li><a href="#" target="_blank">二0一二年批准加入民办高校名单公告</a></li>
+							
+									<li><a href="#" target="_blank">民教网声明</a></li>
+							
+									<li><a href="#" target="_blank">中国民办高等教育信息网公告更换域名公告</a></li>
+							
+									<li><a href="#" target="_blank">民教网免责严正声明！</a></li>
+							
+									<li><a href="#" target="_blank">全球十大教育发展新理念</a></li>
+							
+									<li><a href="#" target="_blank">民教网要闻教育部发布2020年第1号留学预警</a></li>
+							
+									<li><a href="#" target="_blank">民教网要闻全面推进高等学校课程思政建设工作视频会议召开</a></li>
+							
+									<li><a href="#" target="_blank">学校举行纪念思想政治教育学科设立30周年专题报告会</a></li>
+							
+									<li><a href="#" target="_blank">民教网时评谁在投资民办教育？</a></li>
+									
+
+								</ul>
+							</div>
+						</div>
+						<div class="clearboth"></div>
+					</div>
+				</div>
+				
+				
+				<style>
+					#trusted_container{
+						display: none;
+					}
+				</style>		<!-- 顶部 begin -->
+		<div class="head">
+			<div class="sear"></div>
+			
+		</div>
+		<!-- 顶部 end -->
+        <!---------------------------------------------------------------------------------------网站头部结束-->
+
+
+<div class="mainContent2">
+			<div class="curb">
+				当前位置 &gt; <a href="">学业证书查询</a>
+			</div>
+			<div class="cxxt2">
+				<form action="/xyresult" class="form" onsubmit="return from()">
+					
+					<div id="tabcx">
+						<ul>
+							<li class="on">学业证书查询</li>
+							<a href="xwform.html">学位证书查询</a>
+						</ul>
+						<div id="2" class="show"><span class="title">
+								<p>&nbsp;</p>
+								<h2>全国民办院校学生学业证书查询系统</h2>
+							</span>
+							
+								<table class="table_cx2 ftl" width="355">
+									<tbody>
+										<tr>
+											<td width="60" align="right">
+												姓名： </td>
+											<td width="283">
+												<input name="xingming" id="xingming" placeholder="请输入姓名"> </td>
+										</tr>
+										<tr>
+											<td align="right">
+												证书编号： </td>
+											<td>
+												<input name="zsbh" id="biyebianhao" placeholder="请输入证书编号"> </td>
+										</tr>
+										<tr>
+											<td align="right">
+												验证码：</td>
+											<td style="position: relative;">
+												<input placeholder="请输入验证码" class="w112" id="inputCode">
+												<input type="hidden" id="code2" value="6502">
+												<span class="sdiv2" style="position: absolute;right: 50px;bottom: 20px;"><span id="code" class="sdiv">6502</span></span>
+											</td>
+										</tr>
+										<tr>
+											<td align="right">&nbsp; </td>
+											<td><input type="submit" value="查询" class="btn_blue btn">
+											</td>
+										</tr>
+										<tr>
+											<td>&nbsp;</td>
+											<td>&nbsp;</td>
+										</tr>
+									</tbody>
+								</table>
+
+
+
+								<table width="482" cellspacing="0" cellpadding="0" border="0">
+									<tbody><tr>
+										<td width="482" height="277">
+											<p><span class="jy about_2"><b>查询说明：</b><br>
+													1、证书编号、姓名二项中至少输入两项，若二项均输入，则都作为查询条件。&nbsp;<br>
+													<span class="STYLE2">2、未经学校招生部门录取者，无法注册取得学籍；无学籍者不能取得学业证书。</span></span> </p>
+											<p><span class="pt10 jy"><b>注意事项：</b><br>
+													1；本平台目前仅对国家教育主管部门审批的民办高校或民办高等教育机构开放。<br>
+													2、本平台提供第三方查询服务，入网信息的法力效力由发证院校负责，本站保留意见。<br>
+													3、本平台开通项目：学业证书查询、证书认证。<br>
+													4、工作时间：周一至周五，上午：8:00-12:00、下午：13:00-17:00<br>
+													<font color="#FF0000">5、非学历教育及民办院校培训机构学历、学籍信息查询，查询信息仅供参考，不能作为认证依据。</font><br>
+
+												</span><span class="pt10 jy"><br>
+													<br>
+												</span></p>
+										</td>
+									</tr>
+								</tbody></table>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!---------------------------------------------------------------------------------------底部 begin -->
+<div class="footer2">
+<div class="dbmume">  
+<a href="index.html">首 页</a>
+<a>|</a>
+<a href="16.html">平台介绍</a>
+<a>|</a>
+<a href="17.html">资质批文</a>
+<a>|</a>
+<a href="18.html">主管单位</a>
+<a>|</a>
+<a href="5.html">通知公告</a>
+<a>|</a>
+<a href="221.html">客服中心</a>
+<a>|</a>
+<a href="231.html">版权声明</a>
+</div>  
+  
+<div class="copybq">
+<p>公安局备案号:1101083558号 &nbsp; 备案编号：<a href="javascript:;">湘ICP备17008968 号-5</a></p><p>北京办公地址：北京市海淀区学信信息大厦B座16层　邮政编码:100005 &nbsp; &nbsp;通信地址：北京市100005-019信箱</p><p>主办单位：湖南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagelarge_shiming" target="_blank" href="#"></a>
+
+<dd><img src="static/picture/dbpic.png"></dd>
+</div>  
+  
+  
+<script type="text/javascript" src="static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="static/js/flexslider.js">
+</script>
+<script>
+		    $(function () {
+		        if($('.tableTitle').length>0){
+		            $('#aaa').css('display','none');
+					
+		        }else{
+		            $('#aaa').css('display','block');
+					
+		        }
+		    })
+</script>
+<script type="text/javascript">
+
+$(function(){   
+    /*focus*/
+    var sliderElement = $('.slider-carousel');
+    sliderElement.slidesjs({
+        play: {
+            auto: true,
+            effect: 'fade'
+        },
+        navigation: {
+            effect: "fade"
+        },
+        pagination: {
+            effect: "fade"
+        },
+        effect: {
+            slide: {
+                speed: 400
+            }
+        }
+    });
+    var slidernav = sliderElement.find('.slidesjs-navigation');
+    sliderElement.hover(function() {
+        slidernav.stop().show()
+    },function() {
+        slidernav.stop().hide()
+    });
+    
+    /*要闻*/
+    $(".index_focus .rig_list ul li").hover(function(){
+        $(this).toggleClass("hover")
+    })
+    
+    /*Tab*/
+    $(".index_tab").each(function(){    
+        $(this).find(".tabmenu li").mouseover(function(){
+            index = $(".index_tab .tabmenu li").index(this);
+            $(this).addClass("selected").siblings().removeClass("selected");
+            $(".tabox .tab_con").eq(index).show().siblings().hide();
+        }); 
+    })
+    $(".index_tab .index_list01 li").each(function(){
+        $(this).width(function(){
+            return $(this).width();
+        })
+    })
+    
+    //回应关切
+    $(".index_hygq ul li").each(function(){
+        index = $(".index_hygq ul li").index(this);
+        $(this).attr("class","icos"+index)
+        $(this).hover(function(){
+            $(this).addClass("hover").siblings().removeClass("hover")
+        },function(){
+            $(this).removeClass("hover")
+        })
+    })
+    $(".index_hygq ul li:eq(0)").addClass("hover")
+    
+    //ico
+    $(".index_tab .fwcx .fw ul li").each(function(){
+        $(".index_tab .fwcx .fw ul li").hover(function(){
+            $(this).find("img").stop().animate({
+                "margin-top":0
+            })
+        },function(){
+            $(this).find("img").stop().animate({
+                "margin-top":"5px"
+            })
+        })
+    })
+    //
+    $('#demo01').flexslider({       
+        slideshow:true,
+        animation: "slide",
+        direction:"horizontal",
+        easing:"swing",
+        controlNav: false,
+        directionNav:true
+    });
+    $('#demo02').flexslider({       
+        slideshow:true,
+        animation: "slide",
+        direction:"horizontal",
+        easing:"swing",
+        controlNav: false,
+        directionNav:true
+    });
+    $(".flexslider").each(function(){
+        $(this).hover(function(){
+            $(this).find(".flex-direction-nav").fadeIn("slow")
+        },function(){
+            $(this).find(".flex-direction-nav").hide()
+        })
+    })
+})
+
+</script>
+<script>
+	(function() {
+		$('#headBox').load('nav.html');
+		$('#footerBox').load('footer.html');
+		$('#leftBox').load('left.html');
+		$("#imgcheckNo").attr('src', serverUrl + '/degree/pcrimg?num=' + Math.random());
+		$("#imgCheckNo1").attr('src', serverUrl + '/degrees/pcrimg?num=' + Math.random());
+	})()
+</script>
+<script>
+    var codeStr = '0123456789';
+    var oDiv = document.getElementById('code');
+    // 用来生成随机整数
+    function getRandom(n, m) { // param: (Number, Number)
+        n = Number(n);
+        m = Number(m);
+        // 确保 m 始终大于 n
+        if (n > m) {
+            var temp = n;
+            n = m;
+            m = temp;
+        }
+        return Math.floor(Math.random()*(m - n) + n);
+    }
+    // 将随机生成的整数下标对应的字母放入div中
+    function getCode() {
+        var str = '';
+        // 验证码有几位就循环几次
+        for (var i = 0;i < 4;i ++) {
+            var ran = getRandom(0, 10);
+            str += codeStr.charAt(ran);
+        }
+        oDiv.innerHTML = str;
+        $("#code2").attr("value", str);
+
+    }
+    getCode();// 调用函数，页面刷新也会刷新验证码
+    // 点击刷新验证码
+    oDiv.onclick = function(){
+        getCode();
+    }
+    </script>
+<script>
+	function from() {
+		let name = $('#xingming').val();
+		let biyebianhao = $('#biyebianhao').val();
+		let inputCode = $('#inputCode').val();
+		let code = $('#code2').val();
+		if (name == "") {
+			alert("姓名不能为空");
+			return false;
+		}
+		if (biyebianhao == "") {
+			alert("证书编号不能为空");
+			return false;
+		}
+		if (inputCode != code) {
+			alert("验证码错误");
+			return false;
+		}
+	}
+</script>
+
+ <!-- GWD SHARE END -->
+</div>
+<!------------------------------------------------------------------------------------------------------------------------------------- 底部 end -->
+</div></div></body>

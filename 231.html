@@ -1,0 +1,224 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>中国民办教育学生信息网(官网)-民教信息网</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+    <link type="text/css" rel="stylesheet" href="static/css/style5.css">
+	<link href="static/css/gk.css" rel="stylesheet" type="text/css">
+    <script src="http://www.ckhci.com.cn/static/js/tab.js" type="text/javascript"></script>
+    <script language="javascript" src="static/js/jquery.js"></script>
+    <script type="text/javascript" src="static/js/tabpic.js"></script>
+    
+</head>
+<body>
+<div style="width: 100%; height: 50px; background-color: rgb(33, 173, 73); position: relative; display: block;" id="toop">
+	<div style="background-image: url(static/image/trusted-web1_01.png);width: 30px;height: 38px;background-size: 100%;background-repeat: no-repeat;margin-left: 25px;float: left;position: absolute;top: 8px;"></div>
+	<h2 style="color: white;font-size: 16px;line-height: 50px;margin-left: 70px;white-space:nowrap">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.ckhci.com.cn，请放心访问</h2>
+	<a href="index.html"><p style="color: #ffe6ae;position: absolute;right: 350px;top: 10px;font-size: 18px;">了解详情&gt;</p></a>
+	<a href="index.html"><img src="static/picture/trusted-real-name.png" style="position: absolute;right: 200px;top: 5px;"></a>
+</div>
+<img id="toop2" src="static/picture/la.png" title="收起" style="position: fixed;right: 50px;top: 0px;width: 50px;height: 70px;" onclick="shou()">
+<img id="toop3" src="static/picture/zhan.png" title="展开" style="position: fixed;right: 50px;top: 0px;width: 50px;height: 70px;display: none;" onclick="zhan()">
+<div class="toop" style="display: none;">
+			<div class="topleft">
+				欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.ckhci.com.cn！
+			</div>
+			<div class="topright">
+				
+			</div>
+</div>
+<script>
+	function shou(){
+		$('.toop').css("display","block");
+		$('#toop3').css("display","block");
+		$('#toop').css("display","none");
+		$('#toop2').css("display","none");
+	}
+	function zhan(){
+		$('.toop').css("display","none");
+		$('#toop3').css("display","none");
+		$('#toop').css("display","block");
+		$('#toop2').css("display","block");
+	}
+</script>    <div class="beiji-01">
+        <div style="background-color:#ffffff;width:1004px;margin:0 auto;">
+        <div class="box2">
+					<div id="banner">
+						                              <img src="static/picture/banner2.png">
+                        					</div>
+					<div id="nav">
+						<div id="nav0">
+							<div class="sylj"><a href="index.html">&nbsp;</a></div>
+							<div class="sygk">
+								<ul>
+									<li><a href="16.html">平台介绍</a></li>
+									<li><a href="17.html">资质批文</a></li>
+									<li><a href="18.html">主管单位</a></li>
+									<li><a href="19.html">领导活动</a></li>
+									<li><a href="20.html">政策法规</a></li>
+									<li><a href="21.html">民教人物</a></li>
+								</ul>
+							</div>
+							<div class="syzx">
+								<ul>
+                                    <li><a href="4.html">新闻中心</a></li>
+                                    <li><a href="5.html">通知公告</a></li>
+                                    <li><a href="6.html">院校资讯</a></li>
+                                    <li><a href="7.html">媒体关注</a></li>
+                                    <li><a href="8.html">教育时评</a></li>
+                                    <li><a href="9.html">要闻博览</a></li>
+										
+								</ul>
+							</div>
+							<div class="syfw">
+								<ul>
+                                <li><a href="xyform.html">证书查询</a></li>
+									<li><a href="xjform.html">学籍查询</a></li>
+									<li><a href="daform.html">档案管理</a></li>
+									<li><a href="bgform.html">认证报告</a></li>
+									<li><a href="zsform.html">证书验证</a></li>
+									<li><a href="xjyzform.html">学籍验证</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div id="announ">
+						<div class="announ_l">
+							<em><img src="static/picture/announce.gif" width="18" height="18"></em>
+							<b></b>
+							<div id="scrollDiv">
+                                <script language="javascript">
+                                $(function(){
+                                //单行应用@Mr.Think
+                                var _wrap=$('ul.line');//定义滚动区域
+                                var _interval=2000;//定义滚动间隙时间
+                                var _moving;//需要清除的动画
+                                _wrap.hover(function(){
+                                clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                                },function(){
+                                _moving=setInterval(function(){
+                                var _field=_wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h=_field.height();//取得每次滚动高度
+                                _field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值，隐藏第一行
+                                _field.css('marginTop',0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                                },_interval)//滚动间隔时间取决于_interval
+                                }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                                });
+                                $(function(){
+                                //多行应用@Mr.Think
+                                var _wrap=$('ul.mulitline');//定义滚动区域
+                                var _interval=3000;//定义滚动间隙时间
+                                var _moving;//需要清除的动画
+                                _wrap.hover(function(){
+                                clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                                },function(){
+                                _moving=setInterval(function(){
+                                var _field=_wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h=_field.height();//取得每次滚动高度
+                                _field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop',0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                                },_interval)//滚动间隔时间取决于_interval
+                                }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                                });
+                                </script>
+								<ul class="line">
+                                								<li style="margin-top: 0px;"><a href="35.html" target="_blank">二0一二年批准加入民办高校名单公告</a></li>
+                                								<li style="margin-top: 0px;"><a href="34.html" target="_blank">中国民办高等教育信息网公告更换域名公告</a></li>
+                                								<li style="margin-top: 0px;"><a href="33.html" target="_blank">民教网声明</a></li>
+                                								<li style="margin-top: 0px;"><a href="32.html" target="_blank">民教网免责严正声明！</a></li>
+                                								<li style="margin-top: 0px;"><a href="31.html" target="_blank">关于非法网站仿冒我司民教网严正声明</a></li>
+                                                                </ul>
+							</div>
+						</div>
+						<div class="clearboth"></div>
+					</div>
+</div>
+<style>
+#trusted_container{
+    display: none;
+}
+</style>        
+			<style>
+			.active{
+			color: red;
+			}			
+			</style>
+            <div class="breadcrumb"> <strong>当前位置：</strong><a href="index.html">首页</a> &gt;&gt; <a href="16.html">平台概况</a> &gt;&gt; <a href="">版权声明</a></div>
+            <div class="main_gk">
+					<div class="nav001">
+						<div class="dj"></div>
+						<ul>
+							 
+							<li><center><a href="16.html" title="平台介绍" class="">平台介绍</a> </center></li>
+							 
+							<li><center><a href="17.html" title="资质批文" class="">资质批文</a> </center></li>
+							 
+							<li><center><a href="18.html" title="主管单位" class="">主管单位</a> </center></li>
+							 
+							<li><center><a href="19.html" title="领导活动" class="">领导活动</a> </center></li>
+							 
+							<li><center><a href="20.html" title="政策法规" class="">政策法规</a> </center></li>
+							 
+							<li><center><a href="index.html" title="民教人物" class="">民教人物</a> </center></li>
+							 
+							<li><center><a href="221.html" title="客服中心" class="">客服中心</a> </center></li>
+							 
+							<li><center><a href="" title="版权声明" class="active">版权声明</a> </center></li>
+													</ul>
+						<div class="pic">
+							<img src="static/picture/pt_16.jpg" width="199" height="274">
+						</div>
+					</div>					<div class="gk_r">
+						<div class="dp"></div>
+						<div class="gk_tit">
+							<h1 style="color: red;font-size: 25px;font-weight: bold;">版权声明</h1>
+						</div>
+
+						<div class="dpic"></div>
+						<div class="txt" style="min-height:530px;width:680px;">
+							<p><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">中国民办教育学生信息网所发布的所有内容，包括但不限于文字、图片、声音、表格、标志、标识、广告、商标、商号、域名、软件、设计风格、专栏目录与名称、内容分类标准以及为用户提供的任何或所有的信息及网站简称，均受我国法律法规和国际公约中有关条款的保护。</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">　　未经本网站同意，使用者不得将中国民办教育学生信息网所提供的任何内容与服务用于其他用途，包含但不限于商业行为。未经本网站的明确书面授权，利用中国民办教育学生信息网的局部或全部的内容作镜像等，否则将依法追究其法律责任。</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">保护隐私</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">　　通常情况下，任何人都是在匿名状态下访问中国民办教育学生信息网并获取信息。特别情况下我们收集个人信息时鼓励使用网名、昵称而非真名。中国民办教育学生信息网某些栏目需要注册才能进入，这类注册也只要求注册用户提供基本信息。有时，中国民办教育学生信息网也会要求注册用户提供更多的信息。这些信息包括，姓名、电子信箱、生日、性别、电话、职业等。这都是要求用户自愿填写和提交，用户填写和提交就说明同意我们搜集和使用其信息。同时，我们认为：注册用户向中国民办教育学生信息网提供个人信息是基于对中国民办教育学生信息网的信任和自愿。中国民办教育学生信息网也正是基于这样的认识，制订并公布保护个人信息与隐私权得规定。</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">　　收集注册用户个人资料仅限于中国民办教育学生信息网内部用作以下用途：</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（1）增加对注册用户的了解；</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（2）向注册用户提供更佳的个性化服务；</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（3）网上开展或可能开展的各种活动；</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（4）目标导向性广告及资讯；</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（5）公布中国民办教育学生信息网新推出的产品及服务；</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（6）本网站认为注册用户会感兴趣的其他资讯与服务；</span><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">（7）统计与分析。本网站所有优质服务的提供是基于注册用户所提供的个人信息资料具有的准确性和时效性。</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">免责声明</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">　　任何因使用本网站或与本网站连接的任何其他网站或网页而引致的意外、疏忽、合约毁坏、诽谤、感染电脑病毒、版权或其他知识产权纠纷及其造成的损失，中国民办教育学生信息网概不负责，不承担任何法律责任。特别指出的是：网站会发表一些诸如读者来信刊登或读者（作者，非我网站工作人员）的文章或其他作品，本站仅仅是发布不代表本站拥有其所有权也不代表本站的观点，同时我们也不承担任何的责任。</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">　　中国民办教育学生信息网承诺但不保证所提供的所有资料和信息是完全准确、完整和真实的。有些信息会随时间改变而发生变化，此类情况本网站无须另行通知；尤其不就本网站提及的任何商品、服务的应有质量或功能承担任何担保责任。</span><br><br><span style="margin: 0px; padding: 0px; color: rgb(0, 102, 153); background-color: rgb(255, 255, 255); font-family: 宋体;">　　用户转发或发送到本网任何站点上的任何资料、信息或通信信息被认为是非机密和非私有的，本网站没有任何通讯保密方面的义务。本网禁止用户发送或转送任何非法的具有威胁、中伤、诽谤、淫秽、色情内容或其他违反法律的资料、信息和言论。对于这些资料，注册用户应承担任何因此有可能产生的民事侵权或刑事法律责任，此等法律责任与中国民办教育学生信息网以及其工作人员无任何的关系。</span></p>						</div>
+					</div>
+					<div class="clear"></div>
+			</div>
+            <div class="dbgd"></div>
+			<div class="footer2">
+<div class="dbmume">  
+<a href="index.html">首 页</a>
+<a>|</a>
+<a href="index.html">平台介绍</a>
+<a>|</a>
+<a href="index.html">资质批文</a>
+<a>|</a>
+<a href="index.html">主管单位</a>
+<a>|</a>
+<a href="index.html">通知公告</a>
+<a>|</a>
+<a href="index.html">客服中心</a>
+<a>|</a>
+<a href="index.html">版权声明</a>
+<!-- <a>|</a>
+<a href="/list-1596.html">用户条款</a> -->
+</div>  
+  
+<div class="copybq">
+<p>公安局备案号:1101083558号 &nbsp; 备案编号：<a href="javascript:;">湘ICP备17008968 号-5</a></p><p>北京办公地址：北京市海淀区学信信息大厦B座16层　邮政编码:100005 &nbsp; &nbsp;通信地址：北京市100005-019信箱</p><p>主办单位：湖南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagelarge_shiming" target="_blank" href="javascript:;"><img src="static/picture/bottom_large_img.png"></a>
+
+<dd><img src="static/picture/dbpic.png"></dd>
+</div>  
+  
+  
+<script type="text/javascript" src="static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="static/js/flexslider.js">
+</script>
+
+<script type="text/javascript"></script></div></div></div></body></html>

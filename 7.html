@@ -1,0 +1,287 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>中国民办教育学生信息网(官网)-民教信息网</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+    <link type="text/css" rel="stylesheet" href="static/css/style5.css">
+    <link href="static/css/lbiao.css" type="text/css" rel="stylesheet">
+    <script src="http://www.ckhci.com.cn/static/js/tab.js" type="text/javascript"></script>
+    <script language="javascript" src="static/js/jquery.js"></script> 
+    <script type="text/javascript" src="static/js/tabpic.js"></script>
+    
+</head>
+<body>
+<div style="width: 100%; height: 50px; background-color: rgb(33, 173, 73); position: relative; display: block;" id="toop">
+	<div style="background-image: url(static/image/trusted-web1_01.png);width: 30px;height: 38px;background-size: 100%;background-repeat: no-repeat;margin-left: 25px;float: left;position: absolute;top: 8px;"></div>
+	<h2 style="color: white;font-size: 16px;line-height: 50px;margin-left: 70px;white-space:nowrap">该网站工信部已备案,唯一百度官方认证(民教网)官方网站www.ckhci.com.cn，请放心访问</h2>
+	<a href="index.html"><p style="color: #ffe6ae;position: absolute;right: 350px;top: 10px;font-size: 18px;">了解详情&gt;</p></a>
+	<a href="index.html"><img src="static/picture/trusted-real-name.png" style="position: absolute;right: 200px;top: 5px;"></a>
+</div>
+<img id="toop2" src="static/picture/la.png" title="收起" style="position: fixed;right: 50px;top: 0px;width: 50px;height: 70px;" onclick="shou()">
+<img id="toop3" src="static/picture/zhan.png" title="展开" style="position: fixed;right: 50px;top: 0px;width: 50px;height: 70px;display: none;" onclick="zhan()">
+<div class="toop" style="display: none;">
+			<div class="topleft">
+				欢迎光临中国民办高等教育学生信息网(中国民办教育学生信息网(官网)-民教信息网)www.ckhci.com.cn！
+			</div>
+			<div class="topright">
+				
+			</div>
+</div>
+<script>
+	function shou(){
+		$('.toop').css("display","block");
+		$('#toop3').css("display","block");
+		$('#toop').css("display","none");
+		$('#toop2').css("display","none");
+	}
+	function zhan(){
+		$('.toop').css("display","none");
+		$('#toop3').css("display","none");
+		$('#toop').css("display","block");
+		$('#toop2').css("display","block");
+	}
+</script>    <div class="beiji-01">
+        <div style="background-color:#ffffff;width:1004px;margin:0 auto;">
+        <div class="box2">
+					<div id="banner">
+						                              <img src="static/picture/banner2.png">
+                        					</div>
+					<div id="nav">
+						<div id="nav0">
+							<div class="sylj"><a href="index.html">&nbsp;</a></div>
+							<div class="sygk">
+								<ul>
+									<li><a href="16.html">平台介绍</a></li>
+									<li><a href="17.html">资质批文</a></li>
+									<li><a href="18.html">主管单位</a></li>
+									<li><a href="19.html">领导活动</a></li>
+									<li><a href="20.html">政策法规</a></li>
+									<li><a href="21.html">民教人物</a></li>
+								</ul>
+							</div>
+							<div class="syzx">
+								<ul>
+                                    <li><a href="4.html">新闻中心</a></li>
+                                    <li><a href="5.html">通知公告</a></li>
+                                    <li><a href="6.html">院校资讯</a></li>
+                                    <li><a href="">媒体关注</a></li>
+                                    <li><a href="8.html">教育时评</a></li>
+                                    <li><a href="9.html">要闻博览</a></li>
+										
+								</ul>
+							</div>
+							<div class="syfw">
+								<ul>
+                                <li><a href="xyform.html">证书查询</a></li>
+									<li><a href="xjform.html">学籍查询</a></li>
+									<li><a href="daform.html">档案管理</a></li>
+									<li><a href="bgform.html">认证报告</a></li>
+									<li><a href="zsform.html">证书验证</a></li>
+									<li><a href="xjyzform.html">学籍验证</a></li>
+								</ul>
+							</div>
+
+						</div>
+					</div>
+					<div id="announ">
+						<div class="announ_l">
+							<em><img src="static/picture/announce.gif" width="18" height="18"></em>
+							<b></b>
+							<div id="scrollDiv">
+                                <script language="javascript">
+                                $(function(){
+                                //单行应用@Mr.Think
+                                var _wrap=$('ul.line');//定义滚动区域
+                                var _interval=2000;//定义滚动间隙时间
+                                var _moving;//需要清除的动画
+                                _wrap.hover(function(){
+                                clearInterval(_moving);//当鼠标在滚动区域中时，停止滚动
+                                },function(){
+                                _moving=setInterval(function(){
+                                var _field=_wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h=_field.height();//取得每次滚动高度
+                                _field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值，隐藏第一行
+                                _field.css('marginTop',0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                                },_interval)//滚动间隔时间取决于_interval
+                                }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                                });
+                                $(function(){
+                                //多行应用@Mr.Think
+                                var _wrap=$('ul.mulitline');//定义滚动区域
+                                var _interval=3000;//定义滚动间隙时间
+                                var _moving;//需要清除的动画
+                                _wrap.hover(function(){
+                                clearInterval(_moving);//当鼠标在滚动区域中时,停止滚动
+                                },function(){
+                                _moving=setInterval(function(){
+                                var _field=_wrap.find('li:first');//此变量不可放置于函数起始处，li:first取值是变化的
+                                var _h=_field.height();//取得每次滚动高度
+                                _field.animate({marginTop:-_h+'px'},600,function(){//通过取负margin值，隐藏第一行
+                                    _field.css('marginTop',0).appendTo(_wrap);//隐藏后，将该行的margin值置零，并插入到最后，实现无缝滚动
+                                })
+                                },_interval)//滚动间隔时间取决于_interval
+                                }).trigger('mouseleave');//函数载入时，模拟执行mouseleave，即自动滚动
+                                });
+                                </script>
+								<ul class="line">
+                                								<li style="margin-top: 0px;"><a href="35.html" target="_blank">二0一二年批准加入民办高校名单公告</a></li>
+                                								<li style="margin-top: 0px;"><a href="34.html" target="_blank">中国民办高等教育信息网公告更换域名公告</a></li>
+                                								<li style="margin-top: 0px;"><a href="33.html" target="_blank">民教网声明</a></li>
+                                								<li style="margin-top: 0px;"><a href="32.html" target="_blank">民教网免责严正声明！</a></li>
+                                								<li style="margin-top: 0px;"><a href="31.html" target="_blank">关于非法网站仿冒我司民教网严正声明</a></li>
+                                                                </ul>
+							</div>
+						</div>
+						<div class="clearboth"></div>
+					</div>
+</div>
+<style>
+#trusted_container{
+    display: none;
+}
+</style>        
+<div class="w960">
+                                            <div class="content">
+                                                <!-- Breadcrumb begin -->
+                                                <div class="breadcrumb"> <strong>当前位置：</strong><a href="index.html">首页</a> &gt;&gt; <a href="">媒体关注</a> &gt;&gt; 文章列表
+                                                <!-- 列表开始 -->
+                                                <div class="listbox">
+                                                <!--图文-->
+                                            <ul class="e2">
+
+
+                                                                                        <li> 
+                                            <a href="25.html" class="title">
+                                                <b>中国日报：全国首个大学生“诚信档案”公共平台建立</b></a> <span class="info">
+                                                <small>日期：</small>8-27</span>
+                                                <p class="intro">中国民教网讯 我国首个大中专生诚信信息公共服务平台15日在京成立。据悉，开通当天，申请建立“诚信档案”的院校已达到50家，学生人数突破10万人，这50家院校的学生将会优先享受到诚信档案带来的好处。专家...	 <a href="25.html">[全文阅读]</a> </p>
+                                            </li>
+                                                                                        <li> 
+                                            <a href="24.html" class="title">
+                                                <b>中国日报网：中国民教网盘点2012年度民办教育十大新闻事件</b></a> <span class="info">
+                                                <small>日期：</small>8-27</span>
+                                                <p class="intro">1、陕西省自2012年起每年设3亿民办高校发展专项资金　　2012年1月，针对民办高等教育所面临的诸多困难，陕西省政府在发布的《关于进一步支持和规范民办高等教育发展的意见》中明确指出，自 2012年起...	 <a href="24.html">[全文阅读]</a> </p>
+                                            </li>
+                                                                                        <li> 
+                                            <a href="23.html" class="title">
+                                                <b>中国网：全国首个大学生“诚信档案”公共平台建立</b></a> <span class="info">
+                                                <small>日期：</small>8-27</span>
+                                                <p class="intro">中国民教网讯 2011年3月15日，全国大中专生诚信信息公共服务平台开通新闻发布会在中国国际科技会展中心举行，这标志着全国大中专学生诚信档案平台正式诞生。据相关负责人介绍，该系统从方便使用、降低授信成...	 <a href="23.html">[全文阅读]</a> </p>
+                                            </li>
+                                                                                        <li> 
+                                            <a href="22.html" class="title">
+                                                <b>淄博时空新闻网：大学生诚信档案实现电子化</b></a> <span class="info">
+                                                <small>日期：</small>8-27</span>
+                                                <p class="intro">中国民教网讯 全国大中专生诚信信息公共服务平台于3月15日正式开通，该平台将为在校大中专学生建立电子诚信档案，真实记录学生的教育经历诚信、经济诚信、生活诚信和就业诚信状况。 据负责人介绍，建立诚信档案...	 <a href="22.html">[全文阅读]</a> </p>
+                                            </li>
+                                                                                        <li> 
+                                            <a href="211.html" class="title">
+                                                <b>贵州信息网：全国首个大学生“诚信档案”公共平台建立</b></a> <span class="info">
+                                                <small>日期：</small>8-27</span>
+                                                <p class="intro">中国民教网讯 我国首个大中专生诚信信息公共服务平台15日在京成立。据悉，开通当天，申请建立“诚信档案”的院校已达到50家，学生人数突破10万人，这50家院校的学生将会优先享受到诚信档案带来的好处。专家...	 <a href="211.html">[全文阅读]</a> </p>
+                                            </li>
+                                            
+
+                                            <div class="crh_pages" style="margin:20px;">
+                                            <div align="right" class="fenye" id="fenye">
+                                            <table border="0">
+                                                <tbody><tr><td id="pagelist">	 </td></tr>
+                                                </tbody></table>
+                                            </div>
+                                            </div>
+                                            </ul>
+
+                                            </div>
+                                                </div>
+                                            </div>
+            <div class="sidebar">
+    <ul>
+      <li class="mostviews">
+        <span class="intit"><a class="more" href="301.html">更多&gt;&gt;</a><strong>一周热点新闻</strong></span>
+        <ul>
+         
+                                                <li><a href="35.html" target="_blank" title="二0一二年批准加入民办高校名单公告">二0一二年批准加入民办高校名单公告</a></li>
+                                                                <li><a href="34.html" target="_blank" title="中国民办高等教育信息网公告更换域名公告">中国民办高等教育信息网公告更换域名公告</a></li>
+                                                                <li><a href="33.html" target="_blank" title="民教网声明">民教网声明</a></li>
+                                                                <li><a href="32.html" target="_blank" title="民教网免责严正声明！">民教网免责严正声明！</a></li>
+                                                                <li><a href="31.html" target="_blank" title="关于非法网站仿冒我司民教网严正声明">关于非法网站仿冒我司民教网严正声明</a></li>
+                                    
+
+                                <li><a href="279.html" target="_blank" title="李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业">李克强主持召开国务院常务会议 部署深入推进大众创业万众创新 重点支持高校毕业生等群体就业创业</a></li>
+                                <li><a href="277.html" target="_blank" title="翁铁慧赴企业调研高校毕业生就业创业情况">翁铁慧赴企业调研高校毕业生就业创业情况</a></li>
+                                <li><a href="275.html" target="_blank" title="教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动">教育部启动实施全国高校与湖北高校毕业生就业创业工作“一帮一”行动</a></li>
+                                <li><a href="273.html" target="_blank" title="教育部启动高校毕业生就业状况核查工作">教育部启动高校毕业生就业状况核查工作</a></li>
+                                <li><a href="272.html" target="_blank" title="教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业">教育部推出四项“不断线”就业服务助力未就业毕业生尽早就业</a></li>
+                 
+
+ 
+        </ul>
+      </li>
+      <li>
+        <div class="bar" style="margin-top:10px;"> <span class="intit"><a class="more" href="21.html">更多&gt;&gt;</a><strong>会客厅</strong></span>
+           		  <div class="focus1" href="/person/77">                
+                <a href="77.html">
+                <img src="static/picture/e98838466bbb88812f747a996708eddf.jpg" width="74" height="56" border="0"> <span style="color: red;">顾明远</span></a>
+                <br><span>中共党员，教育部社会科学委员会副主任、北京师范大学教育学部顾问。</span>
+        </div>
+  
+          <ul>
+                                <li><a href="77.html" target="_blank" title="顾明远">顾明远</a></li>
+                                <li><a href="76.html" target="_blank" title="贾少华">贾少华</a></li>
+                                <li><a href="75.html" target="_blank" title="杨东平">杨东平</a></li>
+                                <li><a href="70.html" target="_blank" title="陈宝生">陈宝生</a></li>
+                                <li><a href="68.html" target="_blank" title="孙春兰">孙春兰</a></li>
+                          </ul>
+  </div>
+</li>
+     <li>
+        <div class="bar"> <span class="intit"><a class="more" target="_blank" href="251.html">更多&gt;&gt;</a><strong>民教网简报</strong></span>
+          <ul>
+                                <li><a href="11.html" target="_blank" title="2013年《民教网工作简报》第十一期">2013年《民教网工作简报》第十一期</a></li>
+                                <li><a href="10.html" target="_blank" title="2013年《民教网工作简报》第十期">2013年《民教网工作简报》第十期</a></li>
+                                <li><a href="91.html" target="_blank" title="2013年《民教网工作简报》第九期">2013年《民教网工作简报》第九期</a></li>
+                                <li><a href="81.html" target="_blank" title="2014年《民教网工作简报》第二期">2014年《民教网工作简报》第二期</a></li>
+                          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>            <div class="dbgd"></div>
+            <div class="footer2">
+<div class="dbmume">  
+<a href="index.html">首 页</a>
+<a>|</a>
+<a href="index.html">平台介绍</a>
+<a>|</a>
+<a href="index.html">资质批文</a>
+<a>|</a>
+<a href="index.html">主管单位</a>
+<a>|</a>
+<a href="index.html">通知公告</a>
+<a>|</a>
+<a href="index.html">客服中心</a>
+<a>|</a>
+<a href="index.html">版权声明</a>
+<!-- <a>|</a>
+<a href="/list-1596.html">用户条款</a> -->
+</div>  
+  
+<div class="copybq">
+<p>公安局备案号:1101083558号 &nbsp; 备案编号：<a href="javascript:;">湘ICP备17008968 号-5</a></p><p>北京办公地址：北京市海淀区学信信息大厦B座16层　邮政编码:100005 &nbsp; &nbsp;通信地址：北京市100005-019信箱</p><p>主办单位：湖南民教信息科技有限公司 &nbsp; &nbsp;指导：全国民办高等教育学生信息咨询与就业指导中心　</p>
+<a id="_pingansec_bottomimagelarge_shiming" target="_blank" href="javascript:;"><img src="static/picture/bottom_large_img.png"></a>
+
+<dd><img src="static/picture/dbpic.png"></dd>
+</div>  
+  
+  
+<script type="text/javascript" src="static/js/jquery-1.9.1.min.js">
+</script>
+
+<script type="text/javascript" src="static/js/slides.js">
+</script>
+
+<script type="text/javascript" src="static/js/flexslider.js">
+</script>
+
+<script type="text/javascript"></script></div></div></div></div></body></html>
