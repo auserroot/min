@@ -343,7 +343,7 @@
                     <tr>
                       <td height='40px'>毕业院校</td>
                       <td height='40px' colspan='5' align="left"  style="text-indent: 12px;">南昌大学科学技术学院</td>
-                      <td height='40px' colspan='2' rowspan="3">1111</td>
+                      <td height='40px' colspan='2' rowspan="3"><img style=" margin:16px 0;width: 126px; height: 126px;" src="static/pic/yz.png" alt=""></td>
                     </tr>
                     <tr>
                       <td height='40px'>专业名称</td>
@@ -425,8 +425,8 @@
               <!-- 底部 begin -->
               <!-- 底部 end -->
               <script>
-                
-                const param = location.href.split('?')[1].split('&')
+                if(location.href.includes('?')){
+                  const param = location.href.split('?')[1].split('&')
                 let obj = {}
                 param.forEach(item => {
                     obj[item.split('=')[0]] = item.split('=')[1]
@@ -440,6 +440,11 @@
                     $('#printHtml').css('display','none')
                   }
                 })
+                }else{
+                  $('#aaa').css('display', 'block');
+                  $('#printHtml').css('display','none')
+                }
+                
                 
                 $('#print').click(()=>{
                   window.print()
